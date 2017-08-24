@@ -11,7 +11,7 @@ https://blogs.technet.microsoft.com/heyscriptingguy/2012/02/05/2012-scripting-ga
 https://blogs.technet.microsoft.com/heyscriptingguy/2011/04/10/2011-scripting-games-all-links-on-one-page/
 
 2010
-https://blogs.technet.microsoft.com/heyscriptingguy/2010/04/26/2010-scripting-games-beginner-event-1-updating-and-creating-registry-keys/
+https://blogs.technet.microsoft.com/heyscriptingguy/2010/04/26/2010-scripting-games-all-links-on-one-page/
 
 2009
 https://blogs.technet.microsoft.com/heyscriptingguy/tag/2009-Summer-Scripting-Games/

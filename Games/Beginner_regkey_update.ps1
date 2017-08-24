@@ -1,6 +1,8 @@
 ﻿<#
 Scenario:
 
+Link: https://blogs.technet.microsoft.com/heyscriptingguy/2010/04/26/2010-scripting-games-beginner-event-1-updating-and-creating-registry-keys/
+
 The boss has decided you need to check computers on the network. 
 After the check has been completed, a registry key needs to be updated with the date and time of the check. 
 You should test for the existence of the registry key, and if the registry key does not exist, it should be created. 
