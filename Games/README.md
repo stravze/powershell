@@ -2,6 +2,9 @@
 
 Script Challenges Links
 
+https://www.reddit.com/r/dailyprogrammer/wiki/challenges
+
+http://adventofcode.com
 
 2012 Games
 http://2012sg.poshcode.org/

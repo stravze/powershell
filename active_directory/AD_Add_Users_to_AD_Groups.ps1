@@ -12,9 +12,7 @@
 ############################################################################################################################
 Comments:
 
-Additional work:
-
-Adding the following:
+.add the following:
     Powershell Pester - Unit Testing
         Find-Module -Name pester
         install-module -Name pester
@@ -27,6 +25,7 @@ Adding the following:
 # Variables
 $Users  = "James Matthews"
 $Group = "DevOps"
+
 
 
 # Module Import
@@ -46,7 +45,7 @@ Describe 'Active Directory' {
        (get-ADGroup -filter * | where-object { $_.name -eq $group } ) | Should Be $true
     }
 
-    it 'Does User Part of Group' {
+    it 'Is User Part of Group' {
         ( get-ADGroupMember -Identity $group | where-object { $_.name -eq $Users } ) | Should Be $true 
     }
     
