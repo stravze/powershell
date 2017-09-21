@@ -8,11 +8,22 @@
 
 #>
 
-$numbers = @()
 
-[ValidatePattern("\d+")]$numbers = (Read-Host "Input any number (separate with comma)").split(',') | ForEach-Object {$_.trim()} | Sort-Object
-
-foreach ($output in $numbers)
+try
     {
-        $output 
+
+        $numbers = @()
+
+        [ValidatePattern("\d+")]$numbers = (Read-Host "Input any number (separate with comma)").split(',') | ForEach-Object {$_.trim()} | Sort-Object
+
+        foreach ($output in $numbers)
+            {
+                $output 
+            }
+
+    }
+catch
+    {
+        Write-Output "Error: Please only enter Numbers"
+
     }
