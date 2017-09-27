@@ -12,3 +12,16 @@
 
 
 #>
+
+
+$tel = [string](Read-host -Prompt "Please enter telephone number")
+
+
+if ($tel.StartsWith(("0")) -and ($tel.Length -eq 10) ) {
+     continue
+    } 
+    else {
+        Write-host "Phone Number must start with a 0 and contain 10 digits"
+}
+
+
