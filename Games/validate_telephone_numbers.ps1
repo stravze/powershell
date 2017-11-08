@@ -14,14 +14,23 @@
 #>
 
 
-$tel = [string](Read-host -Prompt "Please enter telephone number")
+
+# Examples
+# 0123456789
+# 01234-755194
 
 
-if ($tel.StartsWith(("0")) -and ($tel.Length -eq 10) ) {
-     continue
-    } 
-    else {
-        Write-host "Phone Number must start with a 0 and contain 10 digits"
-}
+$tel = [string]"+4401234-847519"  #(Read-host -Prompt "Please enter telephone number")
 
+write-host "Validating $tel Format"
 
+$tel = $tel -Replace '[-]',""
+$tel = $tel -Replace '[+44]',""
+
+if ($tel.StartsWith("0")) {
+    $tel = $tel.replace(" ","") 
+ }
+
+ if ($tel.Length -eq 11) { Write-host "Number must contain 11 digits including area code" }
+    
+ 
